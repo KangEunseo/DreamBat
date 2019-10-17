@@ -4,13 +4,19 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 import kr.hs.emirim.dana.dreambat.Adapter.ListViewAdapter;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 public class FriendsActivity extends FragmentActivity {
 
     private ListView listView;
     private ListViewAdapter adapter;
+    private ImageView message;
+    private ImageView more;
+    private Intent intent;
 
     private int[] img = {R.drawable.profile, R.drawable.profile, R.drawable.profile};
     private String[] name = {"뽀글깨비","뾰족깨비","쭉쭉깨비"};
@@ -23,6 +29,24 @@ public class FriendsActivity extends FragmentActivity {
         setContentView(R.layout.activity_friends);
 
         listView = (ListView)findViewById(R.id.listView);
+        message = (ImageView)findViewById(R.id.message);
+        more = (ImageView)findViewById(R.id.more);
+
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(FriendsActivity.this, MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(FriendsActivity.this, MoreActivity.class);
+                startActivity(intent);
+            }
+        });
 
         adapter = new ListViewAdapter();    //변수 초기화
         listView.setAdapter(adapter);   //어댑터 할당
