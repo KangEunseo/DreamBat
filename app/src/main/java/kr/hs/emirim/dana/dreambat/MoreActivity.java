@@ -11,6 +11,7 @@ public class MoreActivity extends AppCompatActivity {
 
     private ImageView heart;
     private ImageView message;
+    private ImageView settings;
     private Intent intent;
 
     @Override
@@ -20,6 +21,7 @@ public class MoreActivity extends AppCompatActivity {
 
         heart = (ImageView)findViewById(R.id.heart);
         message = (ImageView)findViewById(R.id.message);
+        settings = (ImageView)findViewById(R.id.settings);
 
         heart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +35,14 @@ public class MoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MoreActivity.this, MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MoreActivity.this, MyActivity.class);
                 startActivity(intent);
             }
         });
