@@ -18,7 +18,7 @@ public class FriendsActivity extends FragmentActivity {
     private ImageView more;
     private Intent intent;
 
-    private int[] img = {R.drawable.profile, R.drawable.profile, R.drawable.profile};
+    private int[] img = {R.drawable.p1, R.drawable.p2, R.drawable.p3};
     private String[] name = {"뽀글깨비","뾰족깨비","쭉쭉깨비"};
     private String[] id = {"응원챗봇","미션챗봇","음악챗봇"};
     private String[] content = {"너의 꿈을 응원해~", "꿈을 이루기 위한 미션과 테스트를 수행해봐!", "꿈에 대한 음악을 들려줄게♪"};

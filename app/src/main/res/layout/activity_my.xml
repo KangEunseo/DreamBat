@@ -55,8 +55,8 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
 
     <TextView
         android:id="@+id/textView2"
@@ -160,7 +160,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/profile"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,8 +172,8 @@
         android:id="@+id/imageView10"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
         app:srcCompat="@drawable/camera" />
 
     <ImageView
@@ -182,7 +182,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/user7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
         app:layout_constraintStart_toEndOf="@+id/user7"
         app:layout_constraintTop_toTopOf="@+id/user7"
         app:layout_constraintVertical_bias="0.0"
