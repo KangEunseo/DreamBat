@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 public class FriendsActivity extends FragmentActivity {
-
     private ListView listView;
     private ListViewAdapter adapter;
     private ImageView message;
